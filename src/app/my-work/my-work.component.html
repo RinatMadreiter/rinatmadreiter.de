@@ -1,0 +1,55 @@
+<h1>My Work</h1>
+<div class="btn-container">
+    <button (click)="showAll()">All</button>
+    <button (click)="showAngular()">Angular</button>
+    <button (click)="showJS()">Java Script</button>
+</div>
+<div class="work-collection">
+    <div *ngIf="displayJS" class="single-work-container">
+        <img src="assets/img/work/elpolloloco.jpg">
+        <div class="middle">
+            <div class="work-description">
+                <h3>El Pollo Loco</h3>
+                <p>Java Script - based jump and run game.</p>
+                <a href="http://rinat-madreiter.developerakademie.net/eigene_apps/El_Pollo_Loco/index.html"
+                    target="_blank"><button>Visit now!</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="displayJS" class="single-work-container">
+        <img src="assets/img/work/pokedex.jpg">
+        <div class="middle">
+            <div class="work-description">
+                <h3>Pokedex</h3>
+                <p>Display pokemon with the RESTful Pokémon API.</p>
+                <a href="http://rinat-madreiter.developerakademie.net/eigene_apps/pokedex/index.html"
+                    target="_blank"><button>Visit now!</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="displayAngular" class="single-work-container">
+        <img src="assets/img/work/portfolio.jpg">
+        <div class="middle">
+            <div class="work-description">
+                <h3>Personal Website</h3>
+                <p>Agular - based personal portfolio website.</p>
+                <a href="http://rinat-madreiter.developerakademie.net/index.html"
+                    target="_blank"><button>Visit now!</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="displayAngular" class="single-work-container">
+        <img src="assets/img/work/portfolio.jpg">
+        <div class="middle">
+            <div class="work-description">
+                <h3>El Pollo Loco</h3>
+                <p>Java Script - based jump and run game.</p>
+                <button>Visit now!</button>
+            </div>
+        </div>
+    </div>
+
+</div>
