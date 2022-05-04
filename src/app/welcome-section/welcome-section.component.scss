@@ -22,7 +22,7 @@
     img {
         width: 400px;
         border-radius: 50%;
-            object-fit: cover;
+        object-fit: cover;
     }
 }
 
@@ -43,9 +43,12 @@ button {
     background-color: black;
     color: #2DFCD8;
     border-color: #2DFCD8;
+    cursor: pointer;
+    animation: 225ms ease-in-out;
 
     &:hover {
-        cursor: pointer;
+            background-color: #2DFCD8;
+            color: black;
     }
 }
 
