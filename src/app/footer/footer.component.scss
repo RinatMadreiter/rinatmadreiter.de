@@ -1,0 +1,72 @@
+:host {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 14vw;
+    margin-left: 14vw;
+    background-color: #131111;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    height: 100px;
+}
+
+img {
+    width: 34px;
+    height: 34px;
+    margin-left: 60px;
+}
+
+
+.imprint-container {
+    a {
+        text-decoration: none;
+        color: lightgray;
+        animation: 225ms ease-in-out;
+
+        &:hover {
+            color: #FA2759;
+        }
+    }
+
+    :first-child {
+        margin-left: 80px;
+        margin-right: 40px;
+    }
+}
+
+.network-container {
+
+    img {
+        animation: 225ms ease-in;
+        
+        
+        &:hover {
+            animation-name: scale-bigger;
+            transform: scale(1.5);
+        }
+
+    
+    }
+
+    a:last-child img {
+        margin-right: 80px;
+    }
+}
+
+@keyframes scale-bigger {
+
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.5);
+    }
+
+}
+
+.invert-color {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(46deg) brightness(100%) contrast(103%);
+}

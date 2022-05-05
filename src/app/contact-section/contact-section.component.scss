@@ -6,6 +6,7 @@
     height: 100vh;
     margin-right: 14vw;
     margin-left: 14vw;
+    padding-bottom: 100px;
 }
 
 h1 {
@@ -102,4 +103,18 @@ button {
     width: 100%;
     display: flex;
     justify-content: flex-end
+}
+
+.hidden-response {
+    text-align: center;
+    width:  644px;
+    height: 472.8px;
+
+    h1 {
+        color: #FA2759;
+    }
+}
+
+.d-none {
+    display: none;
 }

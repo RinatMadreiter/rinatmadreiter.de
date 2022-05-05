@@ -9,6 +9,10 @@ import { SkillsSectionComponent } from './skills-section/skills-section.componen
 import { MyWorkComponent } from './my-work/my-work.component';
 import { AboutSectionComponent } from './about-section/about-section.component';
 import { ContactSectionComponent } from './contact-section/contact-section.component';
+import { FooterComponent } from './footer/footer.component';
+import { ImprintComponent } from './imprint/imprint.component';
+import { MainComponent } from './main/main.component';
+import { PrivacyComponent } from './privacy/privacy.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,11 @@ import { ContactSectionComponent } from './contact-section/contact-section.compo
     SkillsSectionComponent,
     MyWorkComponent,
     AboutSectionComponent,
-    ContactSectionComponent
+    ContactSectionComponent,
+    FooterComponent,
+    ImprintComponent,
+    MainComponent,
+    PrivacyComponent
   ],
   imports: [
     BrowserModule,

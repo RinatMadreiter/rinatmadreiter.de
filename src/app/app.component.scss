@@ -1,3 +1,9 @@
-.start-screen {
-    height: 100vh;
+:host {
+    position: relative;
+}
+
+.app-footer {
+    position: absolute;
+    bottom: 0;
+    width: calc(100vw - 28vw);
 }
