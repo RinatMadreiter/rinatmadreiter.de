@@ -13,6 +13,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { MainComponent } from './main/main.component';
 import { PrivacyComponent } from './privacy/privacy.component';
+import { ScrolltopButtonComponent } from './scrolltop-button/scrolltop-button.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { PrivacyComponent } from './privacy/privacy.component';
     FooterComponent,
     ImprintComponent,
     MainComponent,
-    PrivacyComponent
+    PrivacyComponent,
+    ScrolltopButtonComponent,
   ],
   imports: [
     BrowserModule,

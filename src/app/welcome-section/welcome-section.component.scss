@@ -42,14 +42,14 @@ button {
     width: 300px;
     height: 78px;
     background-color: black;
-    color: #2DFCD8;
-    border-color: #2DFCD8;
+    color: #FA2759;
+    border-color: #FA2759;
     cursor: pointer;
     animation: 225ms ease-in-out;
 
     &:hover {
-            background-color: #2DFCD8;
-            color: black;
+        background-color: #FA2759;
+        color: black;
     }
 }
 
@@ -59,14 +59,106 @@ button {
     justify-content: space-between;
 }
 
+
+#arrowDown {
+    width: 57px;
+    height: 57px;
+}
+
 .arrow-down {
-    margin-top: 40px;
+    transform: (rotate(0.5turn));
     width: 15px;
     margin-left: calc(50vw - 50px);
     margin-right: calc(50vw - 50px);
     align-items: center;
     border-radius: 50%;
-    border: 1px solid white;
+    border: 1px solid black;
     padding: 20px;
     cursor: pointer;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(241deg) brightness(103%) contrast(103%);
+    animation: move-down ease-in-out 1000ms infinite alternate;
+
+    &:hover {
+        cursor: pointer;
+        filter: invert(50%) sepia(86%) saturate(6872%) hue-rotate(330deg) brightness(97%) contrast(101%);
+    }
 }
+
+@keyframes move-down {
+    0% {
+        margin-top: 40px;
+        // margin-top: 16.5vh;
+    }
+
+    100% {
+        margin-top: 10px;
+        // margin-top: 12vh;
+    }
+}
+
+// trying out Typewriter
+
+.container {
+    height: 100vh;
+    /*This part is important for centering*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #272c60;
+}
+
+
+.typing-demo {
+    width: 23ch; //22
+    animation: typing 1.5s steps(23) 1, border .5s step-end infinite alternate, border-none-end 1s 1.5s infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    // font-size: 0.5em;
+    font-size: 34px;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes border {
+    50% {
+        border-color: transparent
+    }
+}
+
+@keyframes border-none-end {
+    0% {
+        border-right: none;
+    }
+    100% {
+        border-right: none;
+    }
+}
+
+@keyframes border-none-start {
+    0% {
+        border-right: none;
+        visibility: hidden;
+    }
+    100% {
+        border-right: none;
+        visibility: hidden;
+    }
+}
+
+
+.typing-demo2 {
+    width: 19ch;
+    animation: typing 1.5s steps(19) 1.5s 1, border .5s  step-end infinite alternate, border-none-start 1.5s 1, border-none-end 1s 3s infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 34px;
+}
+

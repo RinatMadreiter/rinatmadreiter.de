@@ -12,4 +12,6 @@ export class WelcomeSectionComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+
 }

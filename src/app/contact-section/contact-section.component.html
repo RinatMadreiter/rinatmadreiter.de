@@ -9,13 +9,13 @@
     </div>
     
     <form target="_blank" action="http://rinat-madreiter.developerakademie.net/send_mail/send_mail.php" method="post">
-        <p class="c1">Name</p>
-        <input required name="name" placeholder="Enter your name" type="text">
-        <p class="c1">Email adress</p>
-        <input placeholder="Enter your Email adress" type="text">
-        <p class="c1">Message</p>
-        <textarea required name="message" id="" cols="30" rows="7" placeholder="Enter your message"></textarea>
-        <div class="button-container"><button type="submit" (click)="emailSent()">Send</button></div>
+        <label for="name" class="c1">Name</label>
+        <input id="name" required name="name" placeholder="Enter your name" type="text">
+        <label for="email" class="c1">Email adress</label>
+        <input id="email" name="email" required placeholder="Enter your Email adress" type="email">
+        <label for="message" class="c1">Message</label>
+        <textarea type="text" id="message" required name="message" cols="30" rows="7" placeholder="Enter your message"></textarea>
+        <div class="button-container"><button type="submit" >Send</button></div><!--  (click)="emailSent()" -->
     </form>
-
+ 
 </div>
