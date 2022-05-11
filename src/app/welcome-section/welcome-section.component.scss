@@ -1,3 +1,5 @@
+
+
 :host {
     display: flex;
     flex-direction: column;
@@ -96,7 +98,6 @@ button {
     }
 }
 
-// trying out Typewriter
 
 .container {
     height: 100vh;
@@ -109,14 +110,14 @@ button {
 
 
 .typing-demo {
-    width: 23ch; //22
+    width: 23ch;
     animation: typing 1.5s steps(23) 1, border .5s step-end infinite alternate, border-none-end 1s 1.5s infinite;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
     font-family: monospace;
-    // font-size: 0.5em;
-    font-size: 34px;
+    font-size: 55px;
+    // font-size: 64px;
 }
 
 @keyframes typing {
@@ -135,6 +136,7 @@ button {
     0% {
         border-right: none;
     }
+
     100% {
         border-right: none;
     }
@@ -145,6 +147,7 @@ button {
         border-right: none;
         visibility: hidden;
     }
+
     100% {
         border-right: none;
         visibility: hidden;
@@ -154,11 +157,11 @@ button {
 
 .typing-demo2 {
     width: 19ch;
-    animation: typing 1.5s steps(19) 1.5s 1, border .5s  step-end infinite alternate, border-none-start 1.5s 1, border-none-end 1s 3s infinite;
+    animation: typing 1.5s steps(19) 2s 1, border .5s step-end infinite alternate, border-none-start 2s 1, border-none-end 1s 3.5s infinite;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
     font-family: monospace;
-    font-size: 34px;
+    font-size: 55px;
+    // font-size: 64px;
 }
-
