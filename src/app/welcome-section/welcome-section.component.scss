@@ -111,7 +111,7 @@ button {
 
 .typing-demo {
     width: 23ch;
-    animation: typing 1.5s steps(23) 1, border .5s step-end infinite alternate, border-none-end 1s 1.5s infinite;
+    animation: typing 1.5s steps(23) 1, border .5s step-end infinite alternate, border-none-end 1s 1.5s infinite; 
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
