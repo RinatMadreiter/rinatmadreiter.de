@@ -1,5 +1,3 @@
-
-
 :host {
     display: flex;
     flex-direction: column;
@@ -28,7 +26,6 @@
         object-fit: cover;
     }
 }
-
 
 
 .primary {
@@ -101,7 +98,6 @@ button {
 
 .container {
     height: 100vh;
-    /*This part is important for centering*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -111,14 +107,30 @@ button {
 
 .typing-demo {
     width: 23ch;
-    animation: typing 1.5s steps(23) 1, border .5s step-end infinite alternate, border-none-end 1s 1.5s infinite; 
+    animation: typing 1.5s steps(23), border .5s step-end infinite alternate, border-none-end 1s 1.5s infinite; 
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
     font-family: monospace;
     font-size: 55px;
-    // font-size: 64px;
 }
+
+
+/* needed for lazyload animation */
+.opacity-0 {
+    transform: translateX(50%);
+    opacity: 0;
+    transition: all 500ms;
+
+}
+
+/* needed for lazyload animation */
+.fade {
+    transform: translateX(0);
+    opacity: 1;
+    transition: all 500ms;
+}
+
 
 @keyframes typing {
     from {
@@ -157,11 +169,10 @@ button {
 
 .typing-demo2 {
     width: 19ch;
-    animation: typing 1.5s steps(19) 2s 1, border .5s step-end infinite alternate, border-none-start 2s 1, border-none-end 1s 3.5s infinite;
+    animation: typing 1.5s steps(19) 2s, border .5s step-end infinite alternate, border-none-start 2s 1, border-none-end 1s 3.5s infinite;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
     font-family: monospace;
     font-size: 55px;
-    // font-size: 64px;
 }
