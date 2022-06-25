@@ -6,7 +6,6 @@
     background-color: black;
     margin-right: 14vw;
     margin-left: 14vw;
-    height: 100vh;
 
 }
 
@@ -16,7 +15,11 @@ h1 {
     margin-block-start: 0;
     margin-block-end: 0;
     margin-bottom: 30px;
-    margin-top: 30px;
+    margin-top: 80px;
+
+    @media(max-width: 1286px) {
+        margin-top: 50px;
+    }
 }
 
 button {
@@ -55,14 +58,22 @@ img {
 .opacity-0 {
     transform: translateX(50%);
     opacity: 0;
-    transition: all 500ms;
+    transition: all 1500ms;
+
+    @media(max-width: 1286px) {
+
+    }
 
 }
 
 .fade {
     transform: translateX(0);
     opacity: 1;
-    transition: all 500ms;
+    transition: all 1500ms;
+
+    @media(max-width: 1286px) {
+
+    }
 }
 
 

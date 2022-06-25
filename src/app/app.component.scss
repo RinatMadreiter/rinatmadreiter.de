@@ -6,6 +6,10 @@
     position: absolute;
     bottom: 0;
     width: calc(100vw - 28vw);
+
+    @media(max-width: 1286px) {
+        position: relative;
+    }
 }
 
 
