@@ -25,10 +25,13 @@ img {
         &:hover {
             color: #FA2759;
             cursor: pointer;
-        }   
+        }
     }
 }
 
 .hide-desktop {
-    display: none;
+
+    @media (max-width: 720px) {
+        display: none;
+    }
 }

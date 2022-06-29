@@ -8,6 +8,10 @@
         margin-block-start: 0;
         margin-block-end: 0;
     }
+
+    @media (max-width: 720px) {
+        height: auto;
+    }
 }
 
 .main {
@@ -40,6 +44,9 @@
 
         @media(max-width: 1000px) and (min-width: 720px) {
             width: 250px;
+        }
+        @media(max-width: 720px) {
+            width: 200px;
         }
     }
 }
@@ -75,10 +82,6 @@ button {
     flex-direction: column;
     justify-content: space-between;
 
-    @media(max-width: 1286px) {
-        min-width: 510px;
-    }
-
     @media(max-width: 1000px) {
         margin-top: 64px;
     }
@@ -88,7 +91,10 @@ button {
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        min-width: none;
+    }
+
+    @media(min-width: 1000px) and (max-width: 1200px) {
+        min-width: 520px;
     }
 
     a {
@@ -162,20 +168,6 @@ button {
 }
 
 
-.container {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #272c60;
-
-    @media(max-width: 1286px) {
-        min-width: 510px;
-    }
-}
-
-
-
 /* needed for lazyload animation */
 .opacity-0 {
     transform: translateX(50%);
@@ -185,6 +177,9 @@ button {
     @media(max-width: 1286px) {
         transform: translateX(14%);
     }
+    @media(max-width: 370px) {
+        transform: translateX(5%);
+    }
 }
 
 /* needed for lazyload animation */
@@ -192,7 +187,7 @@ button {
     transform: translateX(0);
     opacity: 1;
     transition: all 3000ms;
-}
+}  
 
 
 @keyframes typing {
@@ -248,7 +243,9 @@ button {
 
     @media(max-width: 720px) {
         font-size: 32px;
-        line-height: 45px;
+    }
+    @media(max-width: 460px) {
+        font-size: 25px;
     }
 }
 
@@ -268,11 +265,16 @@ button {
 
     @media(max-width: 1000px) and (min-width: 720px) {
         font-size: 30px;
+        margin-top: 45px;
     }
 
     @media(max-width: 720px) {
         font-size: 32px;
-        // line-height: 45px;
+        margin-top: 45px;
+    }
+    @media(max-width: 460px) {
+        font-size: 25px;
+        margin-top: 25px;
     }
 }
 

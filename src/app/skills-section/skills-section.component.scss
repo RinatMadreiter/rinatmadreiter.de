@@ -12,12 +12,16 @@
 
     @media(max-width: 1286px) {
         height: auto;
+        padding-right: 0;
+        padding-left: 0;
     }
 
     @media(max-width: 720px) {
-        margin-right: 8vw;
-        margin-left: 8vw;
+        margin-right: 0;
+        margin-left: 0;
         background-color: #000000;
+        padding-right: 0;
+        padding-left: 0;
     }
 }
 
@@ -59,42 +63,74 @@ h1 {
         object-fit: contain;
         border: 1px solid white;
         box-shadow: 0px 4px 4px rgba(197, 197, 197, 0.25);
+
+        @media (max-width: 500px) {
+            padding: 10px;
+            top: -20px;
+            width: 20px;
+            height: 20px;
+        }
     }
-}
 
 
-.skill {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    color: #000000;
-    background-color: #FFFFFF;
-    width: 183px;
-    height: 120px;
-    border-radius: 8px;
-    margin: 30px 19px 30px 19px;
-    box-shadow: 0px 0px 3px 0px rgb(255, 255, 255);
-
-    @media(max-width: 1286px) {
-        width: 126px;
-        height: 112px;
+    .skill {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        color: #000000;
+        background-color: #FFFFFF;
+        width: 183px;
+        height: 120px;
         border-radius: 8px;
-        margin: 28px 18px 23px 19px;
+        margin: 30px 19px 30px 19px;
+        box-shadow: 0px 0px 3px 0px rgb(255, 255, 255);
+
+        @media(max-width: 1286px) {
+            width: 126px;
+            height: 112px;
+            border-radius: 8px;
+            margin: 28px 18px 23px 18px;
+        }
+
+        @media(max-width: 600px) {
+            width: 107.66px;
+            height: 70.57px;
+            margin: 30px 4px 30px 4px;
+            font-size: 16px;
+        }
     }
-}
 
-/* needed for lazyload animation */
-.opacity-0 {
-    transform: translateX(200%);
-    opacity: 0;
-    transition: all 1500ms;
+    /* needed for lazyload animation */
+    .opacity-0 {
+        transform: translateX(200%);
+        opacity: 0;
+        transition: all 1500ms;
 
-}
+        @media(max-width: 720px) {
+            transform: translateX(15%);
+        }
 
-.fade {
-    transform: translateX(0);
-    opacity: 1;
-    transition: all 1500ms;
+        @media(min-width: 720px) and (max-width: 1200px) {
+            transform: translateX(30%);
+        }
+        @media(max-width: 370px) {
+            transform: translateX(5%);
+        }
+
+    }
+
+    .fade {
+        transform: translateX(0);
+        opacity: 1;
+        transition: all 1500ms;
+    }
+
+    .mt-16 {
+
+        @media(max-width: 600px) {
+            margin-top: 16px;
+        }
+    }
 }
