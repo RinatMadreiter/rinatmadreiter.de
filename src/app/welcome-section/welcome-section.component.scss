@@ -24,6 +24,11 @@
         margin-top: 10px;
     }
 
+    @media(max-width: 720px) {
+        margin-right: 8vw;
+        margin-left: 8vw;
+    }
+
     img {
         width: 400px;
         border-radius: 50%;
@@ -75,7 +80,15 @@ button {
     }
 
     @media(max-width: 1000px) {
-    margin-top: 64px;
+        margin-top: 64px;
+    }
+
+    @media(max-width: 720px) {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        min-width: none;
     }
 
     a {
@@ -120,8 +133,6 @@ button {
     @media(max-width: 1286px) {
         margin-left: calc(50vw - 39px);
     }
-
-
 }
 
 @media(max-width: 1286px) {
@@ -234,6 +245,11 @@ button {
     @media(max-width: 1000px) and (min-width: 720px) {
         font-size: 30px;
     }
+
+    @media(max-width: 720px) {
+        font-size: 32px;
+        line-height: 45px;
+    }
 }
 
 
@@ -252,6 +268,11 @@ button {
 
     @media(max-width: 1000px) and (min-width: 720px) {
         font-size: 30px;
+    }
+
+    @media(max-width: 720px) {
+        font-size: 32px;
+        // line-height: 45px;
     }
 }
 

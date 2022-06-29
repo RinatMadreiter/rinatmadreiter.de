@@ -1,56 +1,29 @@
 :host {
     display: flex;
-    box-sizing: border-box;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     margin-right: 14vw;
     margin-left: 14vw;
     background-color: #131111;
-    font-size: 18px;
-    line-height: 28px;
-    text-align: center;
     height: 100px;
+
+    @media(max-width: 720px) {
+        height: 70px;
+        margin-right: 0;
+        margin-left: 0;
+    }
 }
 
 img {
+    transition: transform 200ms ease-in-out;
     width: 34px;
     height: 34px;
-    margin-left: 60px;
-}
 
-
-.imprint-container {
-    a {
-        text-decoration: none;
-        color: lightgray;
-        animation: 225ms ease-in-out;
-
-        &:hover {
-            color: #FA2759;
-        }
+    &:hover {
+        transform: scale(1.5);
     }
-
-    :first-child {
-        margin-left: 80px;
-        margin-right: 40px;
+    @media(max-width: 720px) {
+        width: 30px;
+        height: 30px;
     }
 }
-
-.network-container {
-
-    img {
-        transition: transform 200ms ease-in-out;  
-        
-        &:hover {
-            transform: scale(1.5);
-        }
-    }
-
-    a:last-child img {
-        margin-right: 80px;
-    }
-}
-
-
-
-

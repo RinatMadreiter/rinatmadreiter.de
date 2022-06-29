@@ -13,6 +13,11 @@
         margin-top: 150px;
         padding-bottom: 0;
     }
+
+    @media(max-width: 720px) {
+        margin-right: 8vw;
+        margin-left: 8vw;
+    }
 }
 
 h1 {
@@ -23,7 +28,11 @@ h1 {
     margin-block-start: 0;
     margin-block-end: 0;
 
-  
+    @media(max-width: 720px) {
+        font-size: 32px;
+        line-height: 30px;
+    }
+
 }
 
 p {
@@ -66,10 +75,11 @@ input {
 
     &:focus {
         outline: 1px solid #FA2759;
-        ;
-        // outline-offset: px;
     }
 
+    @media(max-width: 720px) {
+        max-width: 80vw;
+    }
 }
 
 textarea {
@@ -83,6 +93,10 @@ textarea {
     &:focus {
         outline: 1px solid #FA2759;
         ;
+    }
+
+    @media(max-width: 720px) {
+        max-width: 80vw;
     }
 }
 
@@ -119,7 +133,7 @@ button {
 
 .hidden-response {
     text-align: center;
-    width:  644px;
+    width: 644px;
     height: 472.8px;
 
     h1 {

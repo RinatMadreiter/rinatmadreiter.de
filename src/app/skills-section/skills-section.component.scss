@@ -13,6 +13,12 @@
     @media(max-width: 1286px) {
         height: auto;
     }
+
+    @media(max-width: 720px) {
+        margin-right: 8vw;
+        margin-left: 8vw;
+        background-color: #000000;
+    }
 }
 
 
@@ -27,6 +33,11 @@ h1 {
 
     @media(max-width: 1286px) {
         margin-top: 50px;
+    }
+
+    @media(max-width: 720px) {
+        font-size: 36px;
+        line-height: 40px;
     }
 }
 

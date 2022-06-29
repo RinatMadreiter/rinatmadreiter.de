@@ -7,6 +7,11 @@
     margin-right: 14vw;
     margin-left: 14vw;
 
+    @media(max-width: 720px) {
+        margin-right: 8vw;
+        margin-left: 8vw;
+    }
+
 }
 
 h1 {
@@ -19,6 +24,11 @@ h1 {
 
     @media(max-width: 1286px) {
         margin-top: 50px;
+    }
+
+    @media(max-width: 720px) {
+        font-size: 32px;
+        line-height: 40px;
     }
 }
 
@@ -40,6 +50,13 @@ button {
     &:hover {
         background-color: #FA2759;
     }
+
+    @media(max-width: 720px) {
+        font-size: 16px;
+        width: 100px;
+        text-align: center;
+        height: 45px;
+    }
 }
 
 img {
@@ -60,8 +77,8 @@ img {
     opacity: 0;
     transition: all 1500ms;
 
-    @media(max-width: 1286px) {
-
+    @media(max-width: 791px) {
+        transform: translateX(15%);
     }
 
 }
@@ -71,9 +88,6 @@ img {
     opacity: 1;
     transition: all 1500ms;
 
-    @media(max-width: 1286px) {
-
-    }
 }
 
 
@@ -125,5 +139,11 @@ img {
         font-size: 18px;
         line-height: 20px;
         text-align: center;
+    }
+}
+
+.btn-container {
+    @media(max-width: 720px) {
+        display: flex;
     }
 }
