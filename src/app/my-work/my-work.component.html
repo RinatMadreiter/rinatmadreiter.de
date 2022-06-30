@@ -5,9 +5,9 @@
     <button (click)="showJS()">Java Script</button>
 </div>
 <div class="work-collection">
-    <div *ngIf="displayJS" class="single-work-container"> 
-        <img id="elpolloloco" class="opacity-0" [ngClass]="{'d-none': elpollolocoImgLazyLoaded && filterclicked}" data-lazy="assets/img/work/elpolloloco.jpg">
-        <img  class="d-none" [ngClass]="{'d-flex': displayJS && elpollolocoImgLazyLoaded && filterclicked}" src="assets/img/work/elpolloloco.jpg"> 
+    <div *ngIf="displayJS" class="single-work-container">
+        <img id="elpolloloco" class="opacity-0" [ngClass]="{'opacity-0': !filterclicked, 'slide-from-right-animation': filterclicked}"
+            src="assets/img/work/elpolloloco.jpg" data-lazy="assets/img/work/elpolloloco.jpg">
         <div class="middle">
             <div class="work-description">
                 <h3>El Pollo Loco</h3>
@@ -19,41 +19,42 @@
     </div>
 
     <div *ngIf="displayJS" class="single-work-container">
-        <img class="opacity-0" data-lazy="assets/img/work/pokedex.jpg">
-        <!-- <img id="pokedex" [ngClass]="{'d-flex': displayJS}" src="assets/img/work/pokedex.jpg"> -->
+        <img [ngClass]="{'opacity-0': !filterclicked, 'slide-from-right-animation': filterclicked}" data-lazy="assets/img/work/pokedex.jpg"
+            src="assets/img/work/pokedex.jpg">
         <div class="middle">
             <div class="work-description">
                 <h3>Pokedex</h3>
                 <p>Display pokemon with the RESTful Pokémon API.</p>
-                <a href="http://rinat-madreiter.developerakademie.net/eigene_apps/pokedex/index.html"
-                    target="_blank" rel="noopener noreferrer"><button>Visit now!</button></a>
+                <a href="http://rinat-madreiter.developerakademie.net/eigene_apps/pokedex/index.html" target="_blank"
+                    rel="noopener noreferrer"><button>Visit now!</button></a>
             </div>
         </div>
     </div>
 
     <div *ngIf="displayAngular" class="single-work-container">
-        <img class="opacity-0" data-lazy="assets/img/work/portfolio.jpg">
-        <!-- <img id="portfolio" [ngClass]="{'d-flex': displayAngular}" class="d-none" src="assets/img/work/portfolio.jpg"> -->
+        <img [ngClass]="{'opacity-0': !filterclicked, 'slide-from-right-animation': filterclicked}" data-lazy="assets/img/work/portfolio.jpg"
+            src="assets/img/work/portfolio.jpg">
         <div class="middle">
             <div class="work-description">
                 <h3>Personal Website</h3>
                 <p>Angular - based personal portfolio website.</p>
-                <a href="http://rinat-madreiter.developerakademie.net/index.html"
-                    target="_blank" rel="noopener noreferrer"><button>Visit now!</button></a>
+                <a href="http://rinat-madreiter.developerakademie.net/index.html" target="_blank"
+                    rel="noopener noreferrer"><button>Visit now!</button></a>
             </div>
-        </div>  
+        </div>
     </div>
 
     <div *ngIf="displayAngular" class="single-work-container">
-        <img id="portfolio" class="opacity-0" data-lazy="assets/img/work/portfolio.jpg">
+        <img [ngClass]="{'opacity-0': !filterclicked, 'slide-from-right-animation': filterclicked}"
+            data-lazy="assets/img/work/portfolio.jpg" src="assets/img/work/portfolio.jpg">
         <div class="middle">
             <div class="work-description">
                 <h3>Personal Website</h3>
                 <p>Angular - based personal portfolio website.</p>
-                <a href="http://rinat-madreiter.developerakademie.net/index.html"
-                    target="_blank" rel="noopener noreferrer"><button>Visit now!</button></a>
+                <a href="http://rinat-madreiter.developerakademie.net/index.html" target="_blank"
+                    rel="noopener noreferrer"><button>Visit now!</button></a>
             </div>
-        </div>  
+        </div>
     </div>
 
 </div>
