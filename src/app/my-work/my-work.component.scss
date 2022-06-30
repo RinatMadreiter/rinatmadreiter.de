@@ -84,6 +84,7 @@ img {
     @media(max-width: 1200px) {
         transform: translateX(15%);
     }
+
     @media(max-width: 370px) {
         transform: translateX(5%);
     }
@@ -149,4 +150,12 @@ img {
     @media(max-width: 720px) {
         display: flex;
     }
+}
+
+.d-none {
+    display: none;
+}
+
+.d-flex {
+    display: flex;
 }

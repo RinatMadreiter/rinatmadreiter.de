@@ -9,8 +9,9 @@ export class MyWorkComponent implements OnInit, AfterViewInit {
 
   displayJS = true;
   displayAngular = true;
-  targets = []; 
-
+  targets = [];
+  elpollolocoImgLazyLoaded: boolean = false;
+  filterclicked: boolean = false;
 
   constructor() { }
 
@@ -27,23 +28,27 @@ export class MyWorkComponent implements OnInit, AfterViewInit {
   showAll() {
     this.displayJS = true;
     this.displayAngular = true;
+    this.filterclicked = true;
   }
 
   showJS() {
     this.displayJS = true;
     this.displayAngular = false;
+    this.filterclicked = true;
   }
 
   showAngular() {
     this.displayJS = false;
     this.displayAngular = true;
+    this.filterclicked = true;
   }
 
 
   // lazy Loading and animate imgs from right
   lazyLoad(target) {
     const io = new IntersectionObserver(this._callback);
-    io.observe(target)
+    io.observe(target);
+
   };
 
 
@@ -55,6 +60,11 @@ export class MyWorkComponent implements OnInit, AfterViewInit {
         img.setAttribute('src', src);
         img.classList.add('fade');
         observer.disconnect();
+        if (entry.target.id == 'elpolloloco') {
+          console.log('El Pollo Loco img with elpolloloco animated');
+          console.log('entry is in screen:', entry.target.id);
+          this.elpollolocoImgLazyLoaded = true;
+        }
       }
     });
   }
