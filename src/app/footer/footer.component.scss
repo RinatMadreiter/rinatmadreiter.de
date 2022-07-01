@@ -15,9 +15,13 @@ img {
     width: 34px;
     height: 34px;
 
-    &:hover {
-        transform: scale(1.5);
+    @media (hover: hover) {
+        &:hover {
+            transform: scale(1.5);
+        }
     }
+
+
     @media(max-width: 720px) {
         width: 30px;
         height: 30px;
@@ -25,17 +29,19 @@ img {
 }
 
 a {
-    &:nth-child(2){
+    &:nth-child(2) {
         margin-left: 128px;
         margin-right: 128px;
-        
+
         @media(max-width: 720px) {
             margin-left: 64px;
-            margin-right: 64px;  
+            margin-right: 64px;
         }
+
         @media(max-width: 400px) {
             margin-left: 48px;
-            margin-right: 48px;  /*  */
+            margin-right: 48px;
+            /*  */
         }
     }
 }
