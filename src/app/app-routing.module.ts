@@ -4,7 +4,7 @@ import { MainComponent } from './main/main.component';
 
 const routes: Routes = [
   { path: '', component: MainComponent },
-  { path: '**', component: MainComponent } //redirects to the main page if a route does not exist
+  { path: '**', component: MainComponent } //redirects to the main page if a route does not exist 
 ];
 
 @NgModule({
@@ -12,3 +12,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+/*  */
