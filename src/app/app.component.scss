@@ -1,17 +1,6 @@
+/* defines relative position of "scrolltop-button */
 :host {
     position: relative;
 }
 
-app-footer {
-    position: absolute;
-    bottom: 0;
-    width: calc(100vw - 28vw);
 
-    @media(max-width: 1286px) {
-        position: relative;
-    }
-    @media(max-width: 720px) {
-        background-color: #131111;
-        width: calc(100vw - 10px);
-    }
-}

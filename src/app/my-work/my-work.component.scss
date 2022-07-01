@@ -47,8 +47,10 @@ button {
     border-color: #FA2759;
     ;
 
-    &:hover {
-        background-color: #FA2759;
+    @media (hover: hover) {
+        &:hover {
+            background-color: #FA2759;
+        }
     }
 
     @media(max-width: 720px) {
@@ -97,7 +99,7 @@ img {
 
 @keyframes slide-from-right {
     0% {
-        transform: translateX(15%);
+        transform: translateX(5%);
         opacity: 0;
     }
 

@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    // height: 100vh;
     margin-right: 14vw;
     margin-left: 14vw;
     padding-bottom: 100px;
@@ -18,7 +18,7 @@
         margin-right: 8vw;
         margin-left: 8vw;
     }
-}
+} 
 
 h1 {
     font-weight: 700;
@@ -32,7 +32,6 @@ h1 {
         font-size: 32px;
         line-height: 30px;
     }
-
 }
 
 p {
@@ -114,9 +113,11 @@ button {
     cursor: pointer;
     animation: 225ms ease-in-out;
 
-    &:hover {
-        background-color: #2DFCD8;
-        color: black;
+    @media (hover: hover) {
+        &:hover {
+            background-color: #2DFCD8;
+            color: black;
+        }
     }
 
     @media(max-width: 1286px) {

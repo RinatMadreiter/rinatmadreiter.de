@@ -1,16 +1,12 @@
 :host {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    margin-right: 14vw;
-    margin-left: 14vw;
     background-color: #131111;
     height: 100px;
 
     @media(max-width: 720px) {
         height: 70px;
-        margin-right: 0;
-        margin-left: 0;
     }
 }
 
@@ -25,5 +21,21 @@ img {
     @media(max-width: 720px) {
         width: 30px;
         height: 30px;
+    }
+}
+
+a {
+    &:nth-child(2){
+        margin-left: 128px;
+        margin-right: 128px;
+        
+        @media(max-width: 720px) {
+            margin-left: 64px;
+            margin-right: 64px;  
+        }
+        @media(max-width: 400px) {
+            margin-left: 48px;
+            margin-right: 48px;  /*  */
+        }
     }
 }

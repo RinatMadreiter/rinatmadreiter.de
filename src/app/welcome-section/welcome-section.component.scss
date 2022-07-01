@@ -45,6 +45,7 @@
         @media(max-width: 1000px) and (min-width: 720px) {
             width: 250px;
         }
+
         @media(max-width: 720px) {
             width: 200px;
         }
@@ -70,9 +71,11 @@ button {
     cursor: pointer;
     animation: 225ms ease-in-out;
 
-    &:hover {
-        background-color: #FA2759;
-        color: black;
+    @media (hover: hover) {
+        &:hover {
+            background-color: #FA2759;
+            color: black;
+        }
     }
 
 }
@@ -177,6 +180,7 @@ button {
     @media(max-width: 1286px) {
         transform: translateX(14%);
     }
+
     @media(max-width: 370px) {
         transform: translateX(5%);
     }
@@ -187,7 +191,7 @@ button {
     transform: translateX(0);
     opacity: 1;
     transition: all 3000ms;
-}  
+}
 
 
 @keyframes typing {
@@ -244,6 +248,7 @@ button {
     @media(max-width: 720px) {
         font-size: 32px;
     }
+
     @media(max-width: 460px) {
         font-size: 25px;
     }
@@ -272,6 +277,7 @@ button {
         font-size: 32px;
         margin-top: 45px;
     }
+
     @media(max-width: 460px) {
         font-size: 25px;
         margin-top: 25px;
@@ -283,9 +289,3 @@ br {
         display: none;
     }
 }
-
-//  Outline for Responsive Debugging
-
-// * :not(.arrow-down, #arrowDown) {
-//     outline: 1px solid limegreen !important;
-// }
