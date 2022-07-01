@@ -12,14 +12,5 @@ export class ScrolltopButtonComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  scrollToTopContainer = document.getElementById("scrollToTopContainer");
-  rootElement = document.documentElement;
-
-  scrollToTop() {
-    this.rootElement.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-  }
 
 }
