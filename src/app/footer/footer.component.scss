@@ -10,6 +10,23 @@
     }
 }
 
+div {
+    position: absolute;
+    bottom: 0;
+    a {
+        margin-top: 10px;
+        margin-left: 0;
+        margin-right: 0;
+        color: #515050;
+        font-size: 8px;
+        text-decoration: none;
+        
+    @media(max-width: 720px) {
+        margin-top: 50px;
+    }
+    }
+}
+
 img {
     transition: transform 200ms ease-in-out;
     width: 34px;
