@@ -11,6 +11,8 @@ export class MenuComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.info('the above waring message is displayed by default on all GitHub Pages websites, for more information click at the link below (from github)');
+    console.info('https://github.blog/changelog/2021-04-27-github-pages-permissions-policy-interest-cohort-header-added-to-all-pages-sites/');
   }
 
 
@@ -23,4 +25,6 @@ export class MenuComponent implements OnInit {
       console.log('menu closed');
     }
   }
+
+
 }
