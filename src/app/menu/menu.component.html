@@ -4,6 +4,13 @@
     <a href="#about">ABOUT</a>
     <a href="#contact">CONTACT</a>
 </div>
-<div [ngClass]="{'open': menuOpen}" class="burger burger-rotate hide-desktop" (click)="openMenu()">
-    <div class="burger-lines"></div>
-  </div>
+<div class="mobile-menu-container">
+    <div [ngClass]="{'open': menuOpen}" class="animated-burger burger burger-rotate hide-desktop" (click)="openMenu()">
+        <div class="burger-lines"></div>
+    </div>
+    <div id="mobileMenu" [ngClass]="{'animate-open-menu': menuOpen, 'd-flex': menuOpen, 'd-none': !menuOpen}" class="mobile-menu-links">
+        <a href="#myWork" (click)="openMenu()">PORTFOLIO</a>
+        <a href="#about" (click)="openMenu()">ABOUT</a>
+        <a href="#contact" (click)="openMenu()">CONTACT</a>
+    </div>
+</div>

@@ -19,10 +19,8 @@ export class MenuComponent implements OnInit {
   openMenu() {
     if (!this.menuOpen) {
       this.menuOpen = true;
-      console.log('menu opened');
     } else {
       this.menuOpen = false;
-      console.log('menu closed');
     }
   }
 
