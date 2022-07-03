@@ -8,8 +8,6 @@
         margin-block-start: 0;
         margin-block-end: 0;
     }
-
-
 }
 
 .main {
@@ -43,16 +41,26 @@
         border-radius: 50%;
         object-fit: cover;
 
+        @media(max-width: 720px) {
+            width: 200px;
+        }
+        @media(max-width: 1000px) and (min-width: 721px) {
+            width: 250px;
+        }
         @media(max-width: 1286px) {
             width: 295px;
         }
-
-        @media(max-width: 1000px) and (min-width: 720px) {
-            width: 250px;
+        @media(min-width: 721px) and (max-width: 1600px) and (max-height: 701px) and (max-height: 900px) {
+            width: 270px;
         }
-
-        @media(max-width: 720px) {
-            width: 200px;
+        @media(max-width: 2000px) and (min-width: 1601px) {
+            width: 300px;
+        }
+        @media(max-width: 2600px)and (min-width: 2001px) {
+            width: 600px;
+        }
+        @media(min-width: 2601px)and (min-width: 2601px) and (min-height: 2100px){
+            width: 45vh;
         }
     }
 }
@@ -86,6 +94,22 @@ button {
     @media(max-width: 300px) {
         width: 200px;
     }
+    @media(max-width: 2000px) and (min-width: 1800px){
+        font-size: 50px;
+        width: 400px;
+        height: auto;
+    }
+    @media(max-width: 2600px) and (min-width: 2000px){
+        font-size: 70px;
+        width: 700px;
+        height: auto;
+    }
+    @media(min-width: 2601px) and (min-height: 2000px){
+        margin-top: 25vh;
+        width: 42vh;
+        height: auto;
+        font-size: 5vh;
+    }
 
 }
 
@@ -98,7 +122,7 @@ button {
         margin-top: 64px;
     }
 
-    @media only screen and (orientation: landscape) and (max-width: 1000px) {
+    @media only screen and (orientation: landscape) and (max-width: 1000px) and (min-width:950px){
         width: 30vw;
     }
 
@@ -193,18 +217,38 @@ button {
     }
 }
 
-@media(min-width: 1286px) {
+@media(max-width: 1540px) and (max-height: 750px) {
 
     @keyframes move-down {
         0% {
             margin-top: 40px;
         }
-
         100% {
             margin-top: 10px;
         }
     }
 }
+@media(max-width: 1600px) and (min-height: 751px) {
+    @keyframes move-down {
+        0% {
+            margin-top: 150px;
+        }
+        100% {
+            margin-top: 120px;
+        }
+    }
+}
+@media(max-width: 2600px) and (min-height: 1080px) {
+    @keyframes move-down {
+        0% {
+            margin-top: 13vh;
+        }
+        100% {
+            margin-top: 10vh;
+        }
+    }
+}
+
 
 
 /* needed for lazyload animation */
@@ -273,33 +317,44 @@ button {
     font-family: monospace;
     font-size: 55px;
 
-    @media(max-width: 1286px) {
-        font-size: 40px;
-    }
-
-    @media(max-width: 1000px) and (min-width: 720px) {
-        font-size: 30px;
-    }
-
-    @media only screen and (orientation: landscape) and (max-width: 850px) and (max-height: 500px) {
-        font-size: 22px;
-        margin-top: 32px;
-    }
-
-    @media(max-width: 720px) {
-        font-size: 32px;
-    }
-
-    @media(max-width: 460px) {
-        font-size: 25px;
-    }
-
     @media(max-width: 360px) {
         font-size: 20px;
     }
 
     @media(max-width: 300px) {
         font-size: 16px;
+    }
+
+    @media(max-width: 460px) {
+        font-size: 25px;
+    }
+
+    @media(max-width: 720px) {
+        font-size: 32px;
+    }
+    
+    @media only screen and (orientation: landscape) and (max-width: 850px) and (max-height: 500px) {
+        font-size: 22px;
+        margin-top: 32px;
+    }
+
+    @media(max-width: 1000px) and (min-width: 720px) {
+        font-size: 30px;
+    }   
+
+    @media(min-width: 721px) and (max-width: 1600px) and (min-height: 701px) and (max-height: 900px) {
+        font-size: 38px;
+    }
+    
+    @media(min-width: 721px) and (max-width: 1286px) and (max-height: 700px) {
+        font-size: 40px;
+    }
+
+    @media(max-width: 2600px) and (min-width: 2000px){
+        font-size: 70px;
+    }
+    @media(min-width: 2601px) and (min-height: 2100px){
+        font-size: 5vh;
     }
 }
 
@@ -320,6 +375,10 @@ button {
     @media(max-width: 1000px) and (min-width: 720px) {
         font-size: 30px;
         margin-top: 45px;
+    }
+
+    @media(min-width: 721px) and (max-width: 1600px) and (min-height: 701px) and (max-height: 900px) {
+        font-size: 38px;
     }
 
     @media only screen and (orientation: landscape) and (max-width: 850px) and (max-height: 500px) {
@@ -343,6 +402,9 @@ button {
 
     @media(max-width: 300px) {
         font-size: 16px;
+    }
+    @media(min-width: 2601px) and (min-height: 2100px){
+        font-size: 5vh;
     }
 }
 

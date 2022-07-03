@@ -17,11 +17,19 @@
         margin-left: 10vw;
         flex-direction: row;
     }
+
+    @media(min-width: 1920px) and (min-height: 1080px){
+        font-size: 3vh;
+    }
 }
 
 img {
     width: 80px;
     height: 80px;
+    @media(min-width: 1920px) and (min-height: 1080px){
+        width: 8vh;
+        height: 8vh;
+    }
 }
 
 .link-container {
