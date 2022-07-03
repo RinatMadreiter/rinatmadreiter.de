@@ -8,7 +8,8 @@
     <div [ngClass]="{'open': menuOpen}" class="animated-burger burger burger-rotate hide-desktop" (click)="openMenu()">
         <div class="burger-lines"></div>
     </div>
-    <div id="mobileMenu" [ngClass]="{'animate-open-menu': menuOpen, 'd-flex': menuOpen, 'd-none': !menuOpen}" class="mobile-menu-links">
+    <div id="mobileMenu" [ngClass]="{'animate-open-menu': menuOpen, 'd-flex': menuOpen, 'd-none': !menuOpen}"
+        class="mobile-menu-links">
         <a href="#myWork" (click)="openMenu()">PORTFOLIO</a>
         <a href="#about" (click)="openMenu()">ABOUT</a>
         <a href="#contact" (click)="openMenu()">CONTACT</a>

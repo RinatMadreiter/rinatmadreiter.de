@@ -6,6 +6,17 @@
     padding-top: 40px;
     font-size: 16px;
     height: 12vh;
+
+    @media (max-width: 720px) {
+        margin-right: 8vw;
+        margin-left: 8vw;
+    }
+
+    @media only screen and (orientation: landscape) and (max-width: 1000px) {
+        margin-right: 10vw;
+        margin-left: 10vw;
+        flex-direction: row;
+    }
 }
 
 img {
@@ -98,30 +109,55 @@ img {
     flex-direction: column;
     background-color: rgba(250, 39, 89, 0.5);
     background-color: #888;
-    z-index: 5;
+    z-index: 10;
     border-radius: 8px;
     padding: 16px;
-    width: 100px;
+    width: 120px;
     transform: translateX(14vw);
+
+
+    @media (max-width: 300px) {
+        transform: translateX(8vw);
+        padding-left: 0;
+        padding-right: 0;
+        align-items: center;
+    }
+
+    @media (max-width: 720px) {
+        transform: translateX(8vw);
+    }
 
     @media (min-width: 721px) {
         display: none;
     }
 
+
     a {
         text-align: right;
         color: white;
         text-decoration: none;
+        font-size: 22px;
+        font-family: monospace;
+        font-weight: 900;
 
         &:nth-child(2) {
-            margin-top: 16px;
-            margin-bottom: 16px;
+            margin-top: 22px;
+            margin-bottom: 22px;
         }
 
         &:hover {
             color: #FA2759;
             cursor: pointer;
         }
+
+        @media (max-width: 300px) {
+            text-align: left;
+        }
+
+        @media (max-width: 720px) {
+            text-align: right;
+        }
+
     }
 }
 
@@ -140,7 +176,7 @@ img {
 .animate-open-menu {
     animation: fly-from-right 1s;
 }
-   
+
 
 @keyframes fly-from-right {
     0% {
@@ -151,5 +187,20 @@ img {
     100% {
         opacity: 1;
         transform: translateX(14vw);
+    }
+}
+
+@media (max-width: 720px) {
+
+    @keyframes fly-from-right {
+        0% {
+            opacity: 0;
+            transform: translate(100%, -100%);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(8vw);
+        }
     }
 }

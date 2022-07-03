@@ -3,13 +3,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // height: 100vh;
     margin-right: 14vw;
     margin-left: 14vw;
     padding-bottom: 100px;
     padding-top: 100px;
 
-    @media(max-width: 1286px) {
+    @media only screen and (orientation: landscape) and (max-width: 1000px) {
+        margin-right: 10vw;
+        margin-left: 10vw;
+    }
+
+    @media(min-width: 720px) and (max-width: 1286px) {
         margin-top: 150px;
         padding-bottom: 0;
     }
@@ -120,7 +124,7 @@ button {
         }
     }
 
-    @media(max-width: 1286px) {
+    @media (min-width: 720px) and (max-width: 1286px) {
         margin-bottom: 200px;
     }
 }
