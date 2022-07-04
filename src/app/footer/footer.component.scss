@@ -8,6 +8,10 @@
     @media(max-width: 720px) {
         height: 70px;
     }
+    @media(min-width: 1920px) and (min-height: 1080px) {
+        height: 12vh;
+    }
+
 }
 
 div {
@@ -43,6 +47,11 @@ img {
         width: 30px;
         height: 30px;
     }
+
+    @media(min-width: 1920px) and (min-height: 1080px) {
+        height: 5vh;
+        width: 5vh;
+    }
 }
 
 a {
@@ -58,7 +67,10 @@ a {
         @media(max-width: 400px) {
             margin-left: 48px;
             margin-right: 48px;
-            /*  */
+        }
+        @media(min-width: 1920px) and (min-height: 1080px) {
+            margin-right: 8vh;
+            margin-left: 8vh;
         }
     }
 }

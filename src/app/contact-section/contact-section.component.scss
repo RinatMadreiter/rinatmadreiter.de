@@ -22,6 +22,12 @@
         margin-right: 8vw;
         margin-left: 8vw;
     }
+
+    @media(min-width: 1920px) and (min-height: 1080px) {
+       font-size: 2vh;
+       margin-top: 2vh;
+       margin-bottom: 3vh;
+    }
 } 
 
 h1 {
@@ -36,6 +42,10 @@ h1 {
         font-size: 32px;
         line-height: 30px;
     }
+    @media(min-width: 1920px) and (min-height: 1080px) {
+        font-size: 5vh;
+        margin-bottom: 4vh;
+    }
 }
 
 p {
@@ -45,6 +55,11 @@ p {
     margin-block-end: 0;
     margin-bottom: 16px;
     margin-top: 20px;
+
+    @media(min-width: 1920px) and (min-height: 1080px) {
+        font-size: 2vh;
+        margin-bottom: 4vh;
+    }
 }
 
 .info {
@@ -55,6 +70,13 @@ p {
     a {
         color: #2EFCD8;
         text-decoration: none;
+
+        &:hover {
+            color: #FA2759;
+        }
+    }
+    @media(min-width: 1920px) and (min-height: 1080px) {
+        margin-bottom: 5vh;
     }
 }
 
@@ -66,6 +88,11 @@ p {
     color: #989898;
     font-size: 18px;
     line-height: 20px;
+
+    @media(min-width: 1920px) and (min-height: 1080px) {
+        font-size: 2vh;
+        line-height: 2.5vh;
+    }
 }
 
 input {
@@ -78,10 +105,18 @@ input {
 
     &:focus {
         outline: 1px solid #FA2759;
+        @media(min-width: 1920px) and (min-height: 1080px) {
+            outline: 0.2vh solid #FA2759;
+        }
     }
 
     @media(max-width: 720px) {
         max-width: 80vw;
+    }
+    @media(min-width: 1920px) and (min-height: 1080px) {
+        width: 33vw;
+        height: 4vh;
+        font-size: 2vh;
     }
 }
 
@@ -95,11 +130,18 @@ textarea {
 
     &:focus {
         outline: 1px solid #FA2759;
-        ;
+        @media(min-width: 1920px) and (min-height: 1080px) {
+            outline: 0.2vh solid #FA2759;
+        }
     }
 
     @media(max-width: 720px) {
         max-width: 80vw;
+    }
+    @media(min-width: 1920px) and (min-height: 1080px) {
+        width: 33vw;
+        height: 15vh;
+        font-size: 2vh;
     }
 }
 
@@ -127,6 +169,14 @@ button {
     @media (min-width: 720px) and (max-width: 1286px) {
         margin-bottom: 200px;
     }
+
+    @media(min-width: 1920px) and (min-height: 1080px) {
+        font-size: 2vh;
+        line-height: 2.5vh;
+        width: 17vh;
+        height: 6vh;
+        border: 0.5vh solid #2DFCD8;
+    }
 }
 
 .button-container {
@@ -134,20 +184,6 @@ button {
     width: 100%;
     display: flex;
     justify-content: flex-end;
-}
-
-.hidden-response {
-    text-align: center;
-    width: 644px;
-    height: 472.8px;
-
-    h1 {
-        color: #FA2759;
-    }
-}
-
-.d-none {
-    display: none;
 }
 
 
@@ -160,4 +196,11 @@ label {
     margin-bottom: 16px;
     margin-top: 20px;
     cursor: pointer;
+
+    @media(min-width: 1920px) and (min-height: 1080px) {
+        font-size: 2vh;
+        line-height: 2.5vh;
+        margin-bottom: 2vh;
+        margin-top: 2vh;
+    }
 }

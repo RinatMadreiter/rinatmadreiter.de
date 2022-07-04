@@ -26,6 +26,10 @@
         margin-right: 8vw;
         margin-left: 8vw;
     }
+    @media(min-width: 1920px) and (min-height: 1080px) {
+        font-size: 5vh;
+        margin-bottom: 2vh;
+    }
 }
 
 
@@ -64,6 +68,12 @@ button {
     @media(max-width: 300px) {
         width: 60px;
         font-size: 12px;
+    }
+
+    @media(min-width: 1920px) and (min-height: 1080px) {
+        font-size: 3vh;
+        width: 18vh;
+        height: fit-content;
     }
 }
 
@@ -198,12 +208,21 @@ img {
             margin-block-start: 0;
             margin-block-end: 0;
         }
+
+        @media(min-width: 1920px) and (min-height: 1080px) {
+            font-size: 3vh;
+            height: fit-content;
+        }
     }
 
     p {
         @media(max-width: 420px) {
             font-size: 12px;
             line-height: 13px;
+        }
+        @media(min-width: 1920px) and (min-height: 1080px) {
+            font-size: 2vh;
+            line-height: 2.5vh;
         }
     }
 
