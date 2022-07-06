@@ -12,6 +12,7 @@ export class ContactSectionComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  
   sentEmail() {
     alert('Your message was sent!');
   }
