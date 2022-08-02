@@ -13,8 +13,5 @@ export class ContactSectionComponent implements OnInit {
   }
 
   
-  sentEmail() {
-    alert('Your message was sent!');
-  }
 
 }
