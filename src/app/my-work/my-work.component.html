@@ -6,6 +6,32 @@
 </div>
 <div class="work-collection">
     <div *ngIf="displayJS" class="single-work-container">
+        <img class="opacity-0" [ngClass]="{'opacity-0': !filterclicked, 'slide-from-right-animation': filterclicked}"
+            src="assets/img/work/photogallery.png" data-lazy="assets/img/work/photogallery.png">
+        <div class="middle">
+            <div class="work-description">
+                <h3>Photo-Gallery</h3>
+                <p>Java Script - based, impressive photo gallery</p>
+                <a href="https://rinatmadreiter.github.io/Photo-Gallery/"
+                    target="_blank" rel="noopener noreferrer"><button>Visit now!</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="displayJS" class="single-work-container">
+        <img class="opacity-0" [ngClass]="{'opacity-0': !filterclicked, 'slide-from-right-animation': filterclicked}"
+            src="assets/img/work/quizapp.png" data-lazy="assets/img/work/quizapp.png">
+        <div class="middle">
+            <div class="work-description">
+                <h3> Bootstrap Quizapp</h3>
+                <p> Boardgame Quizapp build with javascript and bootstrap</p>
+                <a href="https://rinatmadreiter.github.io/Quiz-App/"
+                    target="_blank" rel="noopener noreferrer"><button>Visit now!</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="displayJS" class="single-work-container">
         <img id="elpolloloco" class="opacity-0" [ngClass]="{'opacity-0': !filterclicked, 'slide-from-right-animation': filterclicked}"
             src="assets/img/work/elpolloloco.png" data-lazy="assets/img/work/elpolloloco.png">
         <div class="middle">
